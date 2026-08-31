@@ -1,4 +1,4 @@
 *.env
 *.tar
 *.tar.gz
-job_posting_email_generator/
+*.zip
