@@ -2,7 +2,8 @@
 - It's used to generate the different variants of emails based on provided text (like job post).
 
 ## How To Run
-1. Pull the docker image <br />**CMD :**`docker pull saiamarendrareddy/job-posting-email-generator:1.0.0`
+1. Pull the docker image <a href="https://hub.docker.com/r/saiamarendrareddy/job-posting-email-generator">Docker Hub Image</a><br/>
+**CMD to pull docker Image:**`docker pull saiamarendrareddy/job-posting-email-generator:1.0.0`, 
 
 2. Clone the github `git clone --branch job-posting-email-generator --single-branch https://github.com/SaiAmarendraReddy/docker_hub.git`
 
