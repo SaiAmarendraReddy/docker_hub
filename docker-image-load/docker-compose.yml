@@ -1,0 +1,15 @@
+services:
+  docker-image-load:
+    image: saiamarendrareddy/docker-image-loader:${DOCKER_IMAGE_VERSION}
+    container_name: ${DOCKER_CONTAINER_NAME}
+    ports:
+      - "${HOST_PORT}:8000"
+    volumes:
+      # Persist received files
+      - ./docker-image-loader-volume:/app/docker_images
+      # Give the container access to the HOST Docker daemon
+      - /var/run/docker.sock:/var/run/docker.sock
+# volumes
+volumes:
+  docker-image-loader-volume:
+    driver: local
