@@ -1,8 +1,8 @@
 services:
   # client service
   client:
-    image: email-template-generator:${CLIENT_VERSION}
-    container_name: email-template-generator-client
+    image: saiamarendrareddy/job-posting-email-generator:${CLIENT_VERSION}
+    container_name: saiamarendrareddy/job-posting-email-generator-client
     networks:
       - email-generator-network
     ports:
@@ -19,7 +19,7 @@ services:
   # database service
   mongo:
     image: mongo:latest
-    container_name: email-template-generator-db
+    container_name: saiamarendrareddy/job-posting-email-generator-db
     healthcheck:
       test: ["CMD-SHELL", "mongosh --quiet --eval \"db.adminCommand('ping').ok\""]
       interval: 10s
